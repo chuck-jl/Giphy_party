@@ -2,7 +2,7 @@ console.log("Let's get this party started!");
 const cardsContainer = document.querySelector('#gifContainer');
 
 async function getGif(q) {
-	let res = await axios.get('http://api.giphy.com/v1/gifs/search', {
+	let res = await axios.get('https://api.giphy.com/v1/gifs/search', {
 		params: { api_key: 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym', limit: '20', q }
 	});
 	let { title, rating, id } = res.data.data[Math.floor(Math.random()*20)];
