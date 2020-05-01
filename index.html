@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+  <div class='container-fluid bg-light mb-3'>
+    <div class="row">
+      <div class="col-6 mx-auto align-middle">
+        <h1 class="text-center display-2">GIPHY PARTY</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 mx-auto align-middle">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Gif keywords: </span>
+          </div>
+          <input type="text" class="form-control" placeholder="Searh whatever you want" aria-label="searchText" id="searchText">
+        </div>
+        <div class="row mb-3">
+          <div class="col-6">
+            <button class="btn btn-info btn-block" id="search">Search Gif!</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-danger btn-block" id="clear">Remove All Gif!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-around"" id="gifContainer">
+      <div class="col-3 m-1">
+        <div class="card">
+          <img class="card-img-top" src="https://media.giphy.com/media/kZoEhRL0Z1puX8LKaF/giphy.gif"
+            alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text"><strong>Title: </strong>Sleep Nap Time GIF by Leroy Patterson</p>
+            <p class="card-text"><strong>Rating: </strong> g</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
